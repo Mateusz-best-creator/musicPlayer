@@ -1,0 +1,119 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+@import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #c9ced3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Spartan, sans-serif;
+  font-size: 12px;
+}
+
+/* h2 h3 */
+
+h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 35px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+  text-align: center;
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+
+@media screen and (max-width: 376px) {
+  .player-container {
+      width: 350px;
+      
+  }
+
+  .img-container {
+      left: 7.5%;
+  }
+
+  .player-controls {
+    margin-left: -1.5rem;
+  }
+}
